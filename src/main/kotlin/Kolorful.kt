@@ -3,7 +3,7 @@ package org.example
 /**
  * Class responsible for printing the colored and styled mesages to the console.
  * */
-class ColorfulPrint {
+class Kolorful {
   private val createString = CreateString()
 
   /**
