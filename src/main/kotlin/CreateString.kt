@@ -9,7 +9,7 @@ class CreateString {
    *
    * @param message The message to be formatted.
    * @param color The text color. Can be a [Color], an [Int] representing a 256-color code, or a [String] in the RGB format ("r;g;b").
-   * @param backgroundColor The background color. Can be a [Background], an [Int] representing a 256-color code, or a [String] in the RGB format ("r;g;b").
+   * @param backgroundColor The background color. Can be a [Color], an [Int] representing a 256-color code, or a [String] in the RGB format ("r;g;b").
    * @param styles A variable number of [Style] options to apply to the text (e.g., bold, italic).
    * @return The formatted string with ANSI escape codes.
    */
@@ -30,7 +30,7 @@ class CreateString {
     }
 
     val backgroundcolorCode = when (backgroundColor) {
-      is Background -> backgroundColor.print()
+      is Color -> (backgroundColor.toBackground())
       is Int -> "48;5;${backgroundColor}"
       is String -> "48;2;${this.formatAndValidateRGB(backgroundColor)}"
       else -> null

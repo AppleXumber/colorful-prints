@@ -17,4 +17,5 @@ enum class Color(private val color: String) {
    * Returns the ANSI code for the text color.
    */
   fun print(): String = color
+  fun toBackground():String = (color.toInt()+10).toString()
 }

@@ -11,7 +11,7 @@ class Kolorful {
    *
    * @param message The message to be printed.
    * @param color The text color. Can be a [Color], an [Int] representing a 256-color code, or a [String] in the RGB format ("r;g;b").
-   * @param backgroundColor The background color. Can be a [Background], an [Int] representing a 256-color code, or a [String] in the RGB format ("r;g;b").
+   * @param backgroundColor The background color. Can be a [Color], an [Int] representing a 256-color code, or a [String] in the RGB format ("r;g;b").
    * @param styles An array of [Style] options to apply to the text (e.g., bold, italic). You must pass them using `arrayOf(Style.Bold, Style.Underlined)` or as a vararg.
    */
   fun println(
@@ -29,7 +29,7 @@ class Kolorful {
    *
    * @param message The message to be printed.
    * @param color The text color. Can be a [Color], an [Int] representing a 256-color code, or a [String] in the RGB format ("r;g;b").
-   * @param backgroundColor The background color. Can be a [Background], an [Int] representing a 256-color code, or a [String] in the RGB format ("r;g;b").
+   * @param backgroundColor The background color. Can be a [Color], an [Int] representing a 256-color code, or a [String] in the RGB format ("r;g;b").
    * @param styles An array of [Style] options to apply to the text (e.g., bold, italic). You must pass them using `arrayOf(Style.Bold, Style.Underlined)` or as a vararg.
    */
   fun print(
